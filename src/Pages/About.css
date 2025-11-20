@@ -1,0 +1,169 @@
+/* MAIN WRAPPER */
+.about-wrapper {
+  padding: 7rem 1rem 4rem;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ffffff, #e8f7ed);
+  --tw-shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .about-wrapper {
+    background: linear-gradient(to bottom, #000000, #0e1b12);
+  }
+}
+
+/* HEADER */
+.about-header {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-primary, #111);
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-title {
+    color: #fff;
+  }
+}
+
+.highlight {
+  color: #22c55e;
+}
+
+.about-subtitle {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* GRID SECTION */
+.info-grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* GLASSMORPHISM CARDS */
+.info-card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07);
+}
+
+@media (prefers-color-scheme: dark) {
+  .info-card {
+    background: rgba(32, 32, 32, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.info-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.info-text {
+  margin-top: 0.5rem;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+/* WHY SECTION */
+.why-section {
+  margin-top: 6rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.why-grid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.why-card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .why-card {
+    background: rgba(32, 32, 32, 0.55);
+  }
+}
+
+.why-card-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.why-card-text {
+  margin-top: 0.7rem;
+  opacity: 0.85;
+}
+
+/* CTA SECTION */
+.cta-section {
+  margin: 6rem auto 3rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, #16a34a, #22c55e);
+  color: white;
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-title {
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
+.cta-text {
+  margin-top: 1rem;
+  opacity: 0.9;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background: white;
+  color: #15803d;
+  font-weight: 700;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.25);
+  transition: 0.3s ease;
+}
